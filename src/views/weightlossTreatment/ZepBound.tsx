@@ -53,7 +53,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
   ];
   return (
     <div className="bg-light font-inter">
-      {/* Hero Section - Semua kata lengkap */}
+      {/* Hero Section */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -68,31 +68,32 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div variants={fadeInLeft} className="space-y-8">
               <h1 className="font-georgia text-4xl md:text-5xl lg:text-6xl text-brown leading-tight">
-                Zepbound Weight Loss Treatment in Malaysia
+                Mounjaro and Zepbound Weight Loss Injection Programme in Malaysia
                 <span className="text-wine block mt-2">(Kuala Lumpur)</span>
               </h1>
 
               <p className="text-xl md:text-2xl text-taupe leading-relaxed">
-                Stuck at the same weight, even when you "do everything right"?
-                Let's change the story.
+                Clinical trial data does not lie. Tirzepatide delivered 20.2%
+                average body weight loss versus 13.7% with semaglutide in the
+                72-week SURMOUNT-5 head-to-head trial.
               </p>
 
               <p className="text-lg text-brown/80 leading-relaxed">
-                At Nexus Clinic Kuala Lumpur, our doctor-monitored weight loss
-                programme is designed to help you feel real appetite control,
-                steady progress, and a plan you can actually live with.
+                At Nexus Clinic KL, medically supervised Mounjaro and Zepbound
+                programmes are structured around the right dose, monthly
+                monitoring, and lifestyle support that fits real Malaysian life.
               </p>
 
               <p className="text-rose font-semibold text-lg">
-                You do not need perfection. You need a safer system that fits
-                your body and lifestyle.
+                This is evidence-led weight management with proper medical
+                assessment, dose titration oversight, and long-term planning.
               </p>
             </motion.div>
 
             <motion.div variants={fadeInRight} className="relative">
               <div className="bg-glass backdrop-blur-sm p-8 rounded-2xl border border-cream shadow-2xl">
                 <h2 className="font-georgia text-2xl text-brown mb-6">
-                  Trust section (quick proof points)
+                  Programme at a glance
                 </h2>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
@@ -101,10 +102,10 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-brown">
-                        Doctor-led assessment before any prescription
+                        Mounjaro approved in Malaysia
                       </h3>
                       <p className="text-taupe">
-                        Safety-first monitoring and clear follow-ups
+                        NPRA approval dated 30 August 2025
                       </p>
                     </div>
                   </div>
@@ -115,10 +116,11 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-brown">
-                        Evidence-based treatment options
+                        Dual GIP and GLP-1 action
                       </h3>
                       <p className="text-taupe">
-                        including GLP-1 and dual-hormone medicines
+                        First-in-class twincretin approach for appetite and
+                        blood sugar control
                       </p>
                     </div>
                   </div>
@@ -129,10 +131,11 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-brown">
-                        Personal guidance
+                        Structured doctor monitoring
                       </h3>
                       <p className="text-taupe">
-                        for food habits, cravings, and realistic activity
+                        Complimentary consultation, titration support, and
+                        monthly reviews
                       </p>
                     </div>
                   </div>
@@ -140,7 +143,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                   <div className="pt-4 border-t border-cream">
                     <p className="text-taupe flex items-center gap-2">
                       <MapPin className="w-5 h-5 text-rose" />
-                      Located in Kuala Lumpur, Malaysia
+                      Wisma UOA II, Jalan Pinang, Kuala Lumpur
                     </p>
                   </div>
                 </div>
@@ -150,7 +153,44 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
         </div>
       </motion.section>
 
-      {/* What is Zepbound Section - Semua kata lengkap */}
+      {/* Intro Expansion Section */}
+      <motion.section
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.25 }}
+        className="py-16 bg-light"
+      >
+        <div className="container mx-auto px-4 md:px-6">
+          <motion.div
+            variants={fadeInUp}
+            className="max-w-5xl mx-auto bg-cream p-8 md:p-10 rounded-2xl shadow-lg"
+          >
+            <h2 className="font-georgia text-3xl md:text-4xl text-brown mb-6">
+              Why tirzepatide is changing weight loss treatment
+            </h2>
+            <div className="space-y-5">
+              <p className="text-lg text-taupe leading-relaxed">
+                For a patient weighing 100 kg, the difference between 20.2% and
+                13.7% total body weight loss is the difference between losing
+                about 20 kg and losing 13.7 kg. That is why tirzepatide has
+                become the most powerful injectable option currently discussed
+                for chronic weight management in Malaysia.
+              </p>
+              <p className="text-lg text-taupe leading-relaxed">
+                Mounjaro is the diabetes indication for tirzepatide. Zepbound is
+                the weight management indication for the same molecule, subject
+                to import and clinic availability. Nexus Clinic KL supports both
+                pathways through a structured programme designed around
+                assessment, safety, titration, monitoring, and realistic daily
+                adherence.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* What is Mounjaro and Zepbound Section */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -162,22 +202,24 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <motion.div variants={fadeInLeft} className="space-y-8">
               <h2 className="font-georgia text-4xl text-brown">
-                What is Zepbound, and why is everyone talking about it?
+                What are Mounjaro and Zepbound, and why is tirzepatide different?
               </h2>
 
               <div className="space-y-6">
                 <p className="text-lg text-taupe leading-relaxed">
-                  Zepbound is the brand name for tirzepatide used for chronic
-                  weight management. It is a prescription injection taken once
-                  weekly, alongside a reduced-calorie diet and increased
-                  physical activity.
+                  Tirzepatide is an injectable prescription medication approved
+                  for type 2 diabetes and chronic weight management. It is the
+                  first and only dual-action twincretin that activates both GIP
+                  and GLP-1 receptor pathways rather than the single GLP-1
+                  pathway used by older medicines such as Ozempic and Wegovy.
                 </p>
 
                 <div className="bg-cream p-6 rounded-xl border-l-4 border-wine">
                   <p className="text-brown font-medium text-lg">
-                    Here is the key point in simple words. Zepbound works on
-                    hunger signals and helps you feel full sooner, so eating
-                    less feels more natural, not like a daily fight.
+                    In simple terms, tirzepatide helps people feel full sooner,
+                    stay satisfied for longer, reduce appetite between meals,
+                    and improve blood sugar control through two complementary
+                    hormone pathways at the same time.
                   </p>
                 </div>
               </div>
@@ -186,37 +228,28 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             <motion.div variants={fadeInRight} className="space-y-8">
               <img
                 src="/images/main/zepbound.webp"
-                alt="Zepbound treatment explanation at Nexus Clinic Kuala Lumpur"
+                alt="Mounjaro and Zepbound tirzepatide programme at Nexus Clinic Kuala Lumpur"
                 className="rounded-2xl shadow-2xl w-full object-cover"
               />
 
               <div className="bg-cream p-8 rounded-2xl">
                 <h3 className="font-georgia text-2xl text-brown mb-4">
-                  Zepbound vs Mounjaro (important Malaysia note)
+                  Mounjaro vs Zepbound in Malaysia
                 </h3>
                 <p className="text-taupe mb-4">
-                  Many people get confused here, so let's keep it clear.
+                  Both products contain the same Eli Lilly tirzepatide molecule
+                  and use the same once-weekly KwikPen injection device.
                 </p>
                 <p className="text-taupe mb-4">
-                  Zepbound and Mounjaro contain the same active ingredient:
-                  tirzepatide.
-                </p>
-                <p className="text-taupe mb-4">
-                  They are marketed for different uses in different places
-                  (weight management vs type 2 diabetes).
-                </p>
-                <p className="text-taupe mb-4">
-                  In Malaysia, clinics may talk about "tirzepatide programmes"
-                  more often than the US brand name "Zepbound." Malaysia's
-                  regulator (NPRA) lists tirzepatide among GLP-1 related
-                  products registered with the Drug Control Authority, and also
-                  references local package inserts for medicines like Mounjaro
-                  (tirzepatide).
+                  Mounjaro is registered for type 2 diabetes management.
+                  Zepbound refers to the chronic weight management indication
+                  and may be available subject to import logistics and clinic
+                  supply.
                 </p>
                 <p className="text-taupe font-medium">
-                  At Nexus Clinic Kuala Lumpur, your doctor will confirm what is
-                  appropriate, what is available through proper channels, and
-                  what fits your health profile before anything starts.
+                  At Nexus Clinic KL, your doctor confirms which treatment route
+                  is appropriate, what stock is available through proper
+                  channels, and what plan best matches your health profile.
                 </p>
               </div>
             </motion.div>
@@ -224,7 +257,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
         </div>
       </motion.section>
 
-      {/* How Zepbound works - Semua kata lengkap */}
+      {/* How tirzepatide works */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -234,35 +267,37 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
       >
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="font-georgia text-4xl text-brown text-center mb-8">
-            How Zepbound works (in human language)
+            How tirzepatide works in the body
           </h2>
 
           <p className="text-center text-taupe max-w-3xl mx-auto mb-12">
-            Your body has hormones that influence hunger, fullness, and blood
-            sugar control. Zepbound activates receptors for GLP-1 and GIP, two
-            gut hormones, to reduce appetite and food intake.
+            The GLP-1 component slows digestion, sends fullness signals to the
+            brain, reduces appetite, and stimulates insulin secretion when blood
+            sugar rises. The GIP component works through a different incretin
+            pathway to improve insulin sensitivity, enhance fat metabolism, and
+            amplify the overall weight loss effect.
           </p>
 
           <div className="max-w-3xl mx-auto space-y-6 mb-12">
             <p className="text-brown font-medium text-lg">
-              What you may notice in real life:
+              What patients commonly notice in real life:
             </p>
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-taupe text-lg">
                 <CheckCircle2 className="w-6 h-6 text-wine" />
-                You feel satisfied with smaller portions
+                Smaller portions feel satisfying sooner
               </li>
               <li className="flex items-center gap-3 text-taupe text-lg">
                 <CheckCircle2 className="w-6 h-6 text-wine" />
-                You snack less "just because"
+                Appetite between meals becomes easier to manage
               </li>
               <li className="flex items-center gap-3 text-taupe text-lg">
                 <CheckCircle2 className="w-6 h-6 text-wine" />
-                Cravings calm down
+                Cravings and impulsive snacking often reduce
               </li>
               <li className="flex items-center gap-3 text-taupe text-lg">
                 <CheckCircle2 className="w-6 h-6 text-wine" />
-                Eating becomes more normal again
+                Blood sugar control and weight loss can improve together
               </li>
             </ul>
           </div>
@@ -272,14 +307,15 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             className="text-center max-w-2xl mx-auto bg-wine/5 p-8 rounded-2xl"
           >
             <p className="text-rose font-semibold text-xl">
-              This is not about willpower. It is about changing the signals that
-              were pushing you to overeat.
+              Tirzepatide is not just about willpower. It changes the biological
+              signals that drive hunger, fullness, metabolism, and glucose
+              regulation.
             </p>
           </motion.div>
         </div>
       </motion.section>
 
-      {/* Candidate Section - Semua kata lengkap */}
+      {/* Candidate Section */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -291,12 +327,13 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
           <div className="grid lg:grid-cols-2 gap-16">
             <motion.div variants={fadeInLeft} className="space-y-8">
               <h2 className="font-georgia text-4xl text-brown">
-                Who can be a candidate for Zepbound-style medical weight loss?
+                Who can be a candidate for medically supervised tirzepatide weight loss?
               </h2>
 
               <p className="text-lg text-taupe">
-                A doctor will decide if it is suitable, but FDA approval for
-                Zepbound weight management is for adults with:
+                Eligibility is determined by a doctor, but tirzepatide for
+                chronic weight management is generally indicated for adults
+                with:
               </p>
 
               <ul className="space-y-4">
@@ -308,16 +345,16 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                   <CheckCircle2 className="w-6 h-6 text-wine shrink-0 mt-1" />
                   <span className="text-brown">
                     BMI 27 or higher with at least one weight-related condition
-                    (example: high blood pressure, type 2 diabetes, or high
-                    cholesterol)
+                    such as type 2 diabetes, high blood pressure,
+                    dyslipidaemia, or obstructive sleep apnoea
                   </span>
                 </li>
               </ul>
 
               <p className="text-taupe">
-                Even if you fit a BMI range, a medical review matters. Some
-                people should not use tirzepatide medicines due to risks and
-                contraindications.
+                A full medical assessment still matters because suitability,
+                safety, current medications, and contraindications all need to
+                be reviewed before any prescription is issued.
               </p>
             </motion.div>
 
@@ -325,65 +362,60 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               <div className="bg-rose/5 p-8 rounded-2xl border border-rose/20">
                 <h3 className="font-georgia text-2xl text-brown mb-6 flex items-center gap-2">
                   <AlertOctagon className="w-6 h-6 text-rose" />
-                  Who should NOT use Zepbound (and who needs extra caution)
+                  Who should not use tirzepatide or needs extra caution
                 </h3>
 
                 <div className="space-y-6">
                   <div>
                     <p className="font-semibold text-brown mb-3">
-                      You should not use Zepbound if:
-                    </p>
-                    <p className="font-semibold text-brown mb-3">
-                      You should not use Zepbound if:
+                      You should not use tirzepatide if:
                     </p>
                     <ul className="space-y-3">
                       <li className="flex gap-2 text-brown/80">
                         <span className="text-rose font-bold">•</span>
-                        You or your family have a history of medullary thyroid
-                        carcinoma (MTC)
+                        You or a close family member have a history of medullary
+                        thyroid carcinoma
                       </li>
                       <li className="flex gap-2 text-brown/80">
                         <span className="text-rose font-bold">•</span>
-                        You have MEN2 (Multiple Endocrine Neoplasia syndrome
-                        type 2)
+                        You have MEN2 (multiple endocrine neoplasia syndrome type 2)
                       </li>
                       <li className="flex gap-2 text-brown/80">
                         <span className="text-rose font-bold">•</span>
-                        You had a serious allergic reaction to tirzepatide
+                        You are pregnant or breastfeeding
                       </li>
                     </ul>
                   </div>
 
                   <div>
                     <p className="font-semibold text-brown mb-3">
-                      You also need careful medical guidance if you have a
-                      history of:
+                      You need careful assessment if you have a history of:
                     </p>
                     <ul className="space-y-3">
                       <li className="flex gap-2 text-brown/80">
                         <span className="text-rose font-bold">•</span>
-                        Pancreatitis
+                        Pancreatitis or active gallbladder disease
                       </li>
                       <li className="flex gap-2 text-brown/80">
                         <span className="text-rose font-bold">•</span>
-                        Gallbladder disease
+                        Thyroid conditions or significant renal impairment
                       </li>
                       <li className="flex gap-2 text-brown/80">
                         <span className="text-rose font-bold">•</span>
-                        Kidney issues (especially if vomiting or dehydration
-                        happens)
+                        Existing insulin therapy or other diabetes medications
                       </li>
                       <li className="flex gap-2 text-brown/80">
                         <span className="text-rose font-bold">•</span>
-                        Significant gastrointestinal problems
+                        Significant gastrointestinal symptoms or dehydration risk
                       </li>
                     </ul>
                   </div>
 
                   <div className="bg-wine/10 p-4 rounded-lg">
                     <p className="text-brown font-medium">
-                      A proper clinic does not "sell injections." A proper
-                      clinic checks risk, monitors you, and adjusts safely.
+                      A proper clinic does not just prescribe an injection. It
+                      screens risk, confirms eligibility, teaches safe use, and
+                      monitors progress responsibly.
                     </p>
                   </div>
                 </div>
@@ -393,7 +425,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
         </div>
       </motion.section>
 
-      {/* Results Section - Semua kata lengkap */}
+      {/* Results Section */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -407,15 +439,14 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
           </h2>
 
           <p className="text-center text-taupe max-w-3xl mx-auto mb-12">
-            People often ask, "How much weight will I lose?" Clinical results
-            vary by dose, duration, and individual health. In published expert
-            summaries of trial data, some patients lost substantial weight over
-            longer treatment periods, and weight loss in later trials averaged
-            around 26% over 88 weeks in one report.
+            SURMOUNT-1 showed average weight loss of 15.0% at 5mg, 19.5% at
+            10mg, and 20.9% at 15mg over 72 weeks. In SURMOUNT-5, tirzepatide
+            delivered 20.2% average body weight loss compared with 13.7% for
+            semaglutide over the same period.
           </p>
 
           <p className="text-center text-brown font-medium text-lg mb-8">
-            What matters more for most people is the pattern:
+            For most patients, the practical journey follows this pattern:
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
@@ -425,32 +456,11 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             >
               <Calendar className="w-8 h-8 text-wine mb-3" />
               <h3 className="font-georgia text-xl text-brown mb-2">
-                Weeks 1-4:
-              </h3>
-              <p className="text-taupe">appetite shifts, early adjustment</p>
-            </motion.div>
-
-            <motion.div
-              variants={scaleIn}
-              className="bg-light p-6 rounded-xl shadow-md"
-            >
-              <Calendar className="w-8 h-8 text-wine mb-3" />
-              <h3 className="font-georgia text-xl text-brown mb-2">
-                Weeks 5-12:
-              </h3>
-              <p className="text-taupe">steady loss becomes more visible</p>
-            </motion.div>
-
-            <motion.div
-              variants={scaleIn}
-              className="bg-light p-6 rounded-xl shadow-md"
-            >
-              <Calendar className="w-8 h-8 text-wine mb-3" />
-              <h3 className="font-georgia text-xl text-brown mb-2">
-                Months 3-6:
+                Weeks 1-4
               </h3>
               <p className="text-taupe">
-                habits feel easier, clothing changes, better control
+                Loading dose phase with body adjustment and early appetite
+                reduction
               </p>
             </motion.div>
 
@@ -460,10 +470,39 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             >
               <Calendar className="w-8 h-8 text-wine mb-3" />
               <h3 className="font-georgia text-xl text-brown mb-2">
-                Long-term:
+                Weeks 5-12
               </h3>
               <p className="text-taupe">
-                maintenance planning becomes the real win
+                Therapeutic effect becomes clearer and meaningful loss often
+                begins
+              </p>
+            </motion.div>
+
+            <motion.div
+              variants={scaleIn}
+              className="bg-light p-6 rounded-xl shadow-md"
+            >
+              <Calendar className="w-8 h-8 text-wine mb-3" />
+              <h3 className="font-georgia text-xl text-brown mb-2">
+                Months 3-6
+              </h3>
+              <p className="text-taupe">
+                Dose optimisation, stronger control, and more visible body
+                composition change
+              </p>
+            </motion.div>
+
+            <motion.div
+              variants={scaleIn}
+              className="bg-light p-6 rounded-xl shadow-md"
+            >
+              <Calendar className="w-8 h-8 text-wine mb-3" />
+              <h3 className="font-georgia text-xl text-brown mb-2">
+                Long-term
+              </h3>
+              <p className="text-taupe">
+                Maintenance planning matters because sustained outcomes matter
+                more than short bursts
               </p>
             </motion.div>
           </div>
@@ -473,14 +512,14 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             className="text-center max-w-2xl mx-auto bg-wine/5 p-8 rounded-xl"
           >
             <p className="text-brown text-xl">
-              At Nexus Clinic Kuala Lumpur, the goal is not "fast." The goal is
-              safe, steady, and maintainable.
+              The aim at Nexus Clinic KL is not rapid, unmanaged loss. The aim
+              is safe, evidence-based, and sustainable progress.
             </p>
           </motion.div>
         </div>
       </motion.section>
 
-      {/* Programme Section - Semua kata lengkap */}
+      {/* Programme Section */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -490,72 +529,75 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
       >
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="font-georgia text-4xl text-brown text-center mb-16">
-            What a doctor-monitored programme at Nexus Clinic Kuala Lumpur can
-            look like
+            What a doctor-monitored tirzepatide programme at Nexus Clinic KL can look like
           </h2>
 
           <p className="text-center text-taupe max-w-3xl mx-auto mb-12">
-            Every patient is different, but here is what a structured journey
-            typically includes.
+            Every patient is different, but the programme follows a structured
+            medical pathway from consultation through maintenance.
           </p>
 
           <div className="space-y-8 max-w-4xl mx-auto">
             <motion.div variants={fadeInUp} className="bg-cream p-8 rounded-xl">
               <h3 className="font-georgia text-2xl text-wine mb-4">
-                1) First consult: your real story matters
+                1) Complimentary consultation and assessment
               </h3>
               <p className="text-taupe">
-                Not just your weight. Your sleep, stress, cravings, past diets,
-                medications, and medical history.
+                Health history, BMI, blood pressure, current medications, blood
+                markers where relevant, and suitability review before anything
+                is prescribed.
               </p>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="bg-cream p-8 rounded-xl">
               <h3 className="font-georgia text-2xl text-wine mb-4">
-                2) Eligibility and safety checks
+                2) Eligibility, dose selection, and safety checks
               </h3>
-              <p className="text-taupe mb-4">A doctor may review:</p>
+              <p className="text-taupe mb-4">Your doctor may review:</p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-taupe">
                   <CheckCircle2 className="w-4 h-4 text-wine" />
-                  BMI and waist measures
+                  BMI and metabolic health profile
                 </li>
                 <li className="flex items-center gap-2 text-taupe">
                   <CheckCircle2 className="w-4 h-4 text-wine" />
-                  Blood pressure
+                  Contraindications, thyroid history, pancreatitis history, and renal risk
                 </li>
                 <li className="flex items-center gap-2 text-taupe">
                   <CheckCircle2 className="w-4 h-4 text-wine" />
-                  Relevant labs (based on your history)
+                  Current insulin or diabetes medication adjustments where needed
                 </li>
                 <li className="flex items-center gap-2 text-taupe">
                   <CheckCircle2 className="w-4 h-4 text-wine" />
-                  Current medications and contraindications
+                  Starting dose and titration schedule using the KwikPen
                 </li>
               </ul>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="bg-cream p-8 rounded-xl">
               <h3 className="font-georgia text-2xl text-wine mb-4">
-                3) A plan that fits Malaysian life
+                3) Injection training and Malaysian lifestyle support
               </h3>
               <p className="text-taupe">
-                Because your life includes real meals and real schedules. Family
-                dinners. Work stress. Late nights. Nasi campur. Grab food.
-                Weekend events.
+                Patients are taught once-weekly self-injection into the abdomen,
+                thigh, or upper arm, plus practical support around meals, work
+                schedules, family eating patterns, and realistic adherence.
               </p>
               <p className="text-taupe mt-4">
-                The plan should work in the real world, not only on paper.
+                The goal is not a paper-perfect plan. The goal is a plan that
+                works in real life.
               </p>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="bg-cream p-8 rounded-xl">
               <h3 className="font-georgia text-2xl text-wine mb-4">
-                4) Ongoing monitoring
+                4) Monthly monitoring and long-term maintenance planning
               </h3>
               <p className="text-taupe">
-                This is where many people succeed. Follow-ups help manage side
-                effects, appetite changes, plateaus, and motivation dips.
+                Follow-ups monitor weight, side effects, blood pressure, blood
+                sugar where relevant, and the next titration step. As goals are
+                reached, maintenance may include dose reduction, closer lifestyle
+                support, or a reduced long-term therapeutic dose.
               </p>
             </motion.div>
           </div>
@@ -564,7 +606,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
 
       <SectionBeforeAfter transformations={transformations} />
 
-      {/* Side Effects Section - Semua kata lengkap */}
+      {/* Side Effects Section */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -574,12 +616,13 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
       >
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="font-georgia text-4xl text-brown text-center mb-8">
-            Side effects: what's common, what's serious
+            Side effects: what is common, and what needs medical attention
           </h2>
 
           <p className="text-center text-taupe max-w-3xl mx-auto mb-12">
-            Most people worry about side effects, and they should. You deserve
-            clear answers.
+            Gastrointestinal effects are the most common and are usually most
+            noticeable during each dose escalation step. This is one reason slow
+            titration matters.
           </p>
 
           <div className="grid lg:grid-cols-2 gap-12">
@@ -591,14 +634,15 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                 </h3>
 
                 <p className="text-taupe mb-4">
-                  The Zepbound FAQ lists common effects such as: nausea,
-                  diarrhea, vomiting, constipation, abdominal pain, indigestion,
-                  injection site reactions, fatigue, and heartburn (among
-                  others).
+                  The most common side effects of tirzepatide include nausea,
+                  constipation, diarrhoea, reduced appetite, and changes in
+                  bowel habit. These are dose-dependent and often improve within
+                  two to four weeks after each escalation step.
                 </p>
                 <p className="text-taupe">
-                  Side effects often show up most during dose increases, then
-                  reduce over time for many people.
+                  Patients who increase too quickly usually feel more discomfort.
+                  Patients who titrate slowly are more likely to tolerate the
+                  programme well and stay on track.
                 </p>
               </div>
             </motion.div>
@@ -611,15 +655,14 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                 </h3>
 
                 <p className="text-taupe mb-4">
-                  Zepbound information warns about serious risks including
-                  thyroid tumors, pancreatitis, gallbladder problems, kidney
-                  issues from dehydration, serious allergic reactions,
-                  hypoglycemia (especially with certain diabetes meds), mood
-                  changes, and more.
+                  Serious but uncommon risks include pancreatitis, acute
+                  gallbladder disease, severe dehydration, significant
+                  hypoglycaemia when combined with certain diabetes medicines,
+                  thyroid-related warnings, and allergic reactions.
                 </p>
                 <p className="font-semibold text-wine">
-                  This is exactly why doctor monitoring is not optional. It is
-                  the point.
+                  This is why medical monitoring is not optional. It is part of
+                  the treatment itself.
                 </p>
               </div>
             </motion.div>
@@ -630,27 +673,25 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             className="mt-12 max-w-4xl mx-auto bg-rose/5 p-8 rounded-2xl border border-rose/20"
           >
             <h3 className="font-georgia text-2xl text-brown mb-6">
-              A very important safety note for surgery or sedation
+              An important note for surgery, sedation, and procedures
             </h3>
 
             <p className="text-taupe mb-4">
-              Malaysia's NPRA has reviewed safety concerns around GLP-1
-              medicines (including semaglutide and tirzepatide) and the
-              potential risk of aspiration during general anaesthesia or deep
-              sedation, linked to delayed gastric emptying.
+              Because GLP-1 related medicines can delay gastric emptying,
+              patients scheduled for surgery, general anaesthesia, or deep
+              sedation should inform both the prescribing doctor and the
+              anaesthesia team early.
             </p>
 
             <p className="text-taupe mb-4">
-              If you are on a GLP-1 or tirzepatide programme and you are
-              scheduled for a procedure, tell your doctor and your anaesthesia
-              team early. NPRA advises healthcare professionals to consider this
-              risk and manage it with patient-specific planning.
+              Procedure planning should always be individualised when a patient
+              is using tirzepatide or similar medications.
             </p>
           </motion.div>
         </div>
       </motion.section>
 
-      {/* Cost Section - Semua kata lengkap */}
+      {/* Cost Section */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -660,41 +701,40 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
       >
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="font-georgia text-4xl text-brown text-center mb-8">
-            Cost of Zepbound weight loss treatment in Kuala Lumpur, Malaysia
+            Mounjaro and Zepbound pricing in Kuala Lumpur, Malaysia
           </h2>
 
           <p className="text-center text-taupe max-w-3xl mx-auto mb-8">
-            People want a number, but the honest answer is: cost depends on the
-            programme and the dose plan, plus whether lab work and follow-ups
-            are included.
+            Pricing depends on dose, monitoring structure, and whether the plan
+            is a simple monthly prescription pathway or a more comprehensive
+            package with bloods and check-ins included.
           </p>
 
           <p className="text-center text-brown font-medium mb-8">
-            Your total cost can change based on:
+            Typical pricing factors include:
           </p>
 
           <div className="max-w-3xl mx-auto bg-cream p-8 rounded-2xl mb-8">
             <ul className="space-y-4">
               <li className="flex gap-3 text-taupe">
                 <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                The medicine brand and supply route used legally by the clinic
+                The prescribed dose and KwikPen strength
               </li>
               <li className="flex gap-3 text-taupe">
                 <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                Your dose level over time
+                Monthly monitoring and doctor review level
               </li>
               <li className="flex gap-3 text-taupe">
                 <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                Frequency of monitoring and follow-ups
+                Whether the programme includes labs, bloods, and nutrition support
               </li>
               <li className="flex gap-3 text-taupe">
                 <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                Whether labs are needed
+                Whether you are on a Mounjaro diabetes pathway or a Zepbound-style weight management pathway
               </li>
               <li className="flex gap-3 text-taupe">
                 <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                Whether you are combining with nutrition coaching or other
-                treatments
+                Any added body contouring or complementary treatments
               </li>
             </ul>
           </div>
@@ -704,17 +744,18 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             className="text-center max-w-2xl mx-auto bg-wine/5 p-8 rounded-2xl"
           >
             <p className="text-brown text-lg font-medium mb-2">
-              Best practice:
+              Indicative pricing from the source content:
             </p>
             <p className="text-taupe">
-              ask for a clear breakdown (consultation fees, medicine cost,
-              monitoring, and what happens if you need adjustments).
+              2.5mg starter from RM 1,100 to RM 1,500, 5mg from RM 1,200 to RM
+              1,800, 10mg from RM 1,800 to RM 2,800, 15mg from RM 2,200 to RM
+              3,500, and 3-month packages from RM 4,500 to RM 9,000.
             </p>
           </motion.div>
         </div>
       </motion.section>
 
-      {/* Comparison Section - Semua kata lengkap */}
+      {/* Comparison Section */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -724,7 +765,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
       >
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="font-georgia text-4xl text-brown text-center mb-16">
-            Zepbound vs Wegovy vs Ozempic vs Mounjaro (simple comparison)
+            Mounjaro vs Wegovy vs Ozempic vs Zepbound
           </h2>
 
           <div className="space-y-8 max-w-4xl mx-auto">
@@ -733,11 +774,11 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               className="bg-light p-8 rounded-2xl shadow-lg"
             >
               <h3 className="font-georgia text-2xl text-brown mb-4">
-                Zepbound vs Mounjaro
+                Mounjaro vs Zepbound
               </h3>
               <p className="text-taupe">
-                Same active ingredient (tirzepatide). Different branding and
-                approvals depending on market and indication.
+                Same tirzepatide molecule, same once-weekly device, different
+                approved indication and availability pathway.
               </p>
             </motion.div>
 
@@ -746,13 +787,15 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               className="bg-light p-8 rounded-2xl shadow-lg"
             >
               <h3 className="font-georgia text-2xl text-brown mb-4">
-                Zepbound vs Wegovy / Ozempic
+                Tirzepatide vs semaglutide
               </h3>
               <ul className="space-y-3 text-taupe">
+                <li>• Tirzepatide activates GIP and GLP-1 receptors.</li>
+                <li>• Ozempic and Wegovy are semaglutide-based GLP-1 medicines.</li>
                 <li>
-                  • Wegovy and Ozempic are semaglutide-based medicines (GLP-1).
+                  • SURMOUNT-5 reported 20.2% average weight loss with
+                  tirzepatide versus 13.7% with semaglutide over 72 weeks.
                 </li>
-                <li>• Zepbound is tirzepatide (GIP + GLP-1).</li>
               </ul>
             </motion.div>
           </div>
@@ -761,14 +804,14 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             variants={fadeInUp}
             className="text-center text-taupe max-w-3xl mx-auto mt-8"
           >
-            Some reports note higher average weight loss in certain tirzepatide
-            trials than semaglutide reports, but your best option still depends
-            on your health history, side effect tolerance, and doctor guidance.
+            Choice still depends on your indication, medical history, side
+            effect tolerance, blood sugar profile, availability, and doctor
+            guidance.
           </motion.p>
         </div>
       </motion.section>
 
-      {/* Fat Freezing Clarification - Semua kata lengkap */}
+      {/* Fat Freezing Clarification */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -779,30 +822,28 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto bg-cream p-8 rounded-2xl">
             <h3 className="font-georgia text-2xl text-brown mb-4">
-              "Is this the same as fat freezing?"
+              Can tirzepatide be combined with other weight loss treatments?
             </h3>
             <p className="text-taupe mb-4">
-              No. And this is important for expectations.
+              Yes, it can be combined with lifestyle modification, dietary
+              coaching, and selected non-pharmacological body contouring
+              treatments for appropriate patients.
             </p>
             <p className="text-taupe mb-4">
-              Fat freezing (cryolipolysis) targets a specific pocket of fat in a
-              specific area. It can help reshape. It does not typically change
-              appetite or overall weight patterns.
+              Treatments such as fat freezing or CoolSculpting target localised
+              fat pockets and are not substitutes for systemic appetite and
+              metabolic treatment.
             </p>
             <p className="text-taupe mb-4">
-              Zepbound-style medical weight loss is about appetite regulation,
-              fullness, and metabolic support. It can reduce overall body
-              weight, which may change multiple areas.
-            </p>
-            <p className="text-taupe mb-4">
-              Some people do both, but the right order matters. Usually, medical
-              weight loss first, contouring later.
+              For many patients, the right order is medical weight loss first,
+              then body contouring later once overall weight is improving and
+              expectations are clearer.
             </p>
           </div>
         </div>
       </motion.section>
 
-      {/* Better Results Section - Semua kata lengkap */}
+      {/* Better Results Section */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -812,16 +853,17 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
       >
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="font-georgia text-4xl text-brown text-center mb-8">
-            How to get better results (without turning your life upside down)
+            How to get better results without making the plan unrealistic
           </h2>
 
           <p className="text-center text-taupe max-w-2xl mx-auto mb-12">
-            Zepbound is not magic, but it can make the basics finally feel
-            doable.
+            Medication works best when the treatment window is used to build
+            habits that support long-term metabolic health and reduce rebound
+            weight gain after the active phase.
           </p>
 
           <p className="text-brown font-medium text-lg mb-6">
-            Simple habits that matter:
+            Practical habits that matter:
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
@@ -831,7 +873,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             >
               <Utensils className="w-8 h-8 text-wine mx-auto mb-3" />
               <p className="text-brown text-sm">
-                Protein at each meal to stay full
+                Protein-focused meals to improve fullness
               </p>
             </motion.div>
 
@@ -841,7 +883,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             >
               <Droplets className="w-8 h-8 text-wine mx-auto mb-3" />
               <p className="text-brown text-sm">
-                Water and electrolytes if nausea or constipation hits
+                Hydration support during nausea or constipation phases
               </p>
             </motion.div>
 
@@ -851,7 +893,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             >
               <Coffee className="w-8 h-8 text-wine mx-auto mb-3" />
               <p className="text-brown text-sm">
-                Smaller meals when appetite changes
+                Smaller meals while appetite signals are changing
               </p>
             </motion.div>
 
@@ -861,7 +903,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             >
               <Dumbbell className="w-8 h-8 text-wine mx-auto mb-3" />
               <p className="text-brown text-sm">
-                Light movement (even walking) to protect muscle and mood
+                Light activity to protect muscle, insulin sensitivity, and mood
               </p>
             </motion.div>
 
@@ -871,7 +913,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             >
               <Bed className="w-8 h-8 text-wine mx-auto mb-3" />
               <p className="text-brown text-sm">
-                Sleep because hunger hormones worsen when sleep is poor
+                Better sleep because poor sleep worsens hunger regulation
               </p>
             </motion.div>
           </div>
@@ -880,12 +922,13 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             variants={fadeInUp}
             className="text-center text-rose font-semibold text-xl mt-8"
           >
-            And please do not crash diet. You want fat loss, not burnout.
+            The goal is sustainable fat loss and metabolic improvement, not
+            burnout from crash dieting.
           </motion.p>
         </div>
       </motion.section>
 
-      {/* FAQs Section - Semua kata lengkap */}
+      {/* FAQs Section */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -895,174 +938,149 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
       >
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="font-georgia text-4xl text-brown text-center mb-4">
-            FAQs (People Also Ask style)
+            Frequently asked questions
           </h2>
           <p className="text-center text-taupe mb-12">
-            These are common "People Also Ask" questions patients search before
-            booking.
+            Common patient questions before starting a tirzepatide programme.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {/* FAQ 1 */}
             <motion.div variants={fadeInUp} className="bg-cream p-6 rounded-xl">
               <h3 className="font-georgia text-lg text-brown mb-3">
-                What is Zepbound and how does it help with weight loss?
+                What is the difference between Mounjaro and Zepbound?
               </h3>
               <p className="text-taupe text-sm">
-                Zepbound is tirzepatide, a prescription injection approved for
-                chronic weight management in adults who meet certain BMI
-                criteria. It works by activating GLP-1 and GIP hormone receptors
-                to reduce appetite and food intake, alongside diet and physical
-                activity.
+                Both contain the same tirzepatide molecule at the same doses
+                using the same KwikPen device. The main difference is the
+                approved indication and availability pathway.
               </p>
             </motion.div>
 
-            {/* FAQ 2 */}
             <motion.div variants={fadeInUp} className="bg-cream p-6 rounded-xl">
               <h3 className="font-georgia text-lg text-brown mb-3">
-                Is Zepbound the same as Mounjaro?
+                How much weight can I realistically expect to lose?
               </h3>
               <p className="text-taupe text-sm">
-                They contain the same active ingredient, tirzepatide. They are
-                marketed and approved for different uses depending on the
-                product and country.
+                In SURMOUNT-1, average loss over 72 weeks was 15.0% at 5mg,
+                19.5% at 10mg, and 20.9% at 15mg. Individual results vary by
+                dose reached, adherence, starting weight, and lifestyle changes.
               </p>
             </motion.div>
 
-            {/* FAQ 3 */}
             <motion.div variants={fadeInUp} className="bg-cream p-6 rounded-xl">
               <h3 className="font-georgia text-lg text-brown mb-3">
-                How long does it take to see results on Zepbound?
+                Is Mounjaro available in Malaysia and do I need a prescription?
               </h3>
               <p className="text-taupe text-sm">
-                Many people notice appetite changes early, but visible weight
-                loss is usually more obvious over weeks to months. Longer trials
-                show larger total loss over extended use, such as reports of
-                significant average loss over 88 weeks in later trial summaries.
+                Yes. Mounjaro received NPRA approval in Malaysia on 30 August
+                2025 and is prescription-only. Tirzepatide should be sourced
+                only through licensed clinics and verified supply channels.
               </p>
             </motion.div>
 
-            {/* FAQ 4 */}
             <motion.div variants={fadeInUp} className="bg-cream p-6 rounded-xl">
               <h3 className="font-georgia text-lg text-brown mb-3">
-                What are the most common side effects of Zepbound?
+                How does tirzepatide reduce appetite and regulate blood sugar?
               </h3>
               <p className="text-taupe text-sm">
-                Commonly reported side effects include nausea, diarrhea,
-                vomiting, constipation, abdominal pain, indigestion, injection
-                site reactions, fatigue, and heartburn.
+                It activates both GLP-1 and GIP receptor pathways, combining
+                delayed gastric emptying, fullness signalling, improved insulin
+                response, and better insulin sensitivity.
               </p>
             </motion.div>
 
-            {/* FAQ 5 */}
             <motion.div variants={fadeInUp} className="bg-cream p-6 rounded-xl">
               <h3 className="font-georgia text-lg text-brown mb-3">
-                Can Zepbound cause serious side effects?
+                Who is eligible for weight management treatment?
               </h3>
               <p className="text-taupe text-sm">
-                Yes. Warnings include thyroid tumor risk (including thyroid
-                cancer), pancreatitis, gallbladder problems, dehydration leading
-                to kidney issues, serious allergic reactions, hypoglycemia, mood
-                changes, and more.
+                Adults with BMI 30 or above, or BMI 27 or above with at least
+                one weight-related condition, may be eligible after full medical
+                assessment.
               </p>
             </motion.div>
 
-            {/* FAQ 6 */}
             <motion.div variants={fadeInUp} className="bg-cream p-6 rounded-xl">
               <h3 className="font-georgia text-lg text-brown mb-3">
-                Who should not take Zepbound?
+                What side effects should I expect?
               </h3>
               <p className="text-taupe text-sm">
-                People with a personal or family history of medullary thyroid
-                carcinoma (MTC), those with MEN2, or those with a serious
-                allergic reaction to tirzepatide should not use it.
+                Nausea, constipation, diarrhoea, and reduced appetite are among
+                the most common effects, especially during dose escalation. Slow
+                titration helps reduce discomfort.
               </p>
             </motion.div>
 
-            {/* FAQ 7 */}
             <motion.div variants={fadeInUp} className="bg-cream p-6 rounded-xl">
               <h3 className="font-georgia text-lg text-brown mb-3">
-                What happens if I stop taking Zepbound?
+                How does Mounjaro compare with Ozempic for weight loss?
               </h3>
               <p className="text-taupe text-sm">
-                Do not stop without speaking to your doctor. Official guidance
-                stresses discussing any stop with your doctor first. Many people
-                regain weight after stopping weight loss medicines, so a
-                maintenance plan matters.
+                SURMOUNT-5 reported 20.2% average weight loss with tirzepatide
+                versus 13.7% with semaglutide over 72 weeks, showing stronger
+                weight loss performance in that direct comparison.
               </p>
             </motion.div>
 
-            {/* FAQ 8 */}
             <motion.div variants={fadeInUp} className="bg-cream p-6 rounded-xl">
               <h3 className="font-georgia text-lg text-brown mb-3">
-                Is Zepbound safe before surgery or sedation?
+                Can tirzepatide be combined with other treatments?
               </h3>
               <p className="text-taupe text-sm">
-                GLP-1 medicines (including tirzepatide) can delay gastric
-                emptying, which may increase aspiration risk during anaesthesia
-                or deep sedation. Malaysia's NPRA has issued safety updates for
-                this risk and advises careful perioperative planning.
+                It can be combined with lifestyle support and selected
+                non-pharmacological body contouring treatments for suitable
+                patients, but the order and safety plan should be doctor-led.
               </p>
             </motion.div>
 
-            {/* FAQ 9 */}
             <motion.div variants={fadeInUp} className="bg-cream p-6 rounded-xl">
               <h3 className="font-georgia text-lg text-brown mb-3">
-                How is Zepbound taken?
+                How long will I need to stay on treatment?
               </h3>
               <p className="text-taupe text-sm">
-                Zepbound is administered once weekly by injection under the
-                skin. Dosing is increased gradually over time under medical
-                supervision. In a clinic programme, you will be taught proper
-                use and monitoring.
+                Duration depends on your goals, your response, and how well
+                long-term lifestyle and maintenance strategies are established.
+                Obesity management is usually not a short-term issue.
               </p>
             </motion.div>
 
-            {/* FAQ 10 */}
             <motion.div variants={fadeInUp} className="bg-cream p-6 rounded-xl">
               <h3 className="font-georgia text-lg text-brown mb-3">
-                Is Zepbound available in Malaysia and Kuala Lumpur?
+                What happens if I stop?
               </h3>
               <p className="text-taupe text-sm">
-                Malaysia's NPRA lists tirzepatide among registered GLP-1 related
-                products in Malaysia and references local package inserts for
-                tirzepatide products. Availability and branding can vary, so
-                your clinic will confirm the exact prescribed product and legal
-                supply pathway during consultation.
+                SURMOUNT-4 showed that patients who stopped tirzepatide regained
+                a meaningful portion of lost weight, which is why maintenance
+                planning should be built into the programme from the start.
               </p>
             </motion.div>
 
-            {/* FAQ 11 */}
             <motion.div variants={fadeInUp} className="bg-cream p-6 rounded-xl">
               <h3 className="font-georgia text-lg text-brown mb-3">
-                How much does Zepbound cost in Malaysia?
+                Is long-term use considered safe?
               </h3>
               <p className="text-taupe text-sm">
-                Costs vary based on dose, clinic monitoring, and whether labs
-                and follow-ups are included. The best step is to request a clear
-                cost breakdown during your Nexus Clinic Kuala Lumpur
-                consultation.
+                Long-term safety has been studied across the SURMOUNT and
+                SURPASS programmes, with generally well-tolerated results when
+                treatment is prescribed appropriately and monitored properly.
               </p>
             </motion.div>
 
-            {/* FAQ 12 */}
             <motion.div variants={fadeInUp} className="bg-cream p-6 rounded-xl">
               <h3 className="font-georgia text-lg text-brown mb-3">
-                Which is better, Zepbound or Wegovy?
+                How is tirzepatide taken?
               </h3>
               <p className="text-taupe text-sm">
-                They work differently (tirzepatide acts on GIP and GLP-1;
-                semaglutide is GLP-1). Some trial summaries report higher
-                average weight loss with tirzepatide in certain studies, but
-                "better" depends on your health profile and side effect
-                tolerance.
+                It is taken once weekly by subcutaneous injection using the
+                KwikPen into the abdomen, thigh, or upper arm, with the dose
+                usually increased every four weeks as tolerated.
               </p>
             </motion.div>
           </div>
         </div>
       </motion.section>
 
-      {/* Competitor Snapshot - Semua kata lengkap */}
+      {/* Competitor Snapshot */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -1072,8 +1090,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
       >
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="font-georgia text-4xl text-brown text-center mb-16">
-            Competitor snapshot (what ranks in KL, and how Nexus should
-            position)
+            What patients want to see on a strong tirzepatide page
           </h2>
 
           <div className="space-y-8 max-w-4xl mx-auto">
@@ -1082,9 +1099,8 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               className="bg-light p-8 rounded-xl shadow-lg"
             >
               <p className="text-taupe leading-relaxed">
-                1. They lead with "doctor-supervised" and "personalised care."
-                Examples include Femma Clinic and Dr. K & Associates
-                highlighting doctor-led programmes and tailored guidance.
+                1. Clear evidence on mechanism, outcomes, and the difference
+                between Mounjaro, Zepbound, Wegovy, and Ozempic.
               </p>
             </motion.div>
 
@@ -1093,10 +1109,8 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               className="bg-light p-8 rounded-xl shadow-lg"
             >
               <p className="text-taupe leading-relaxed">
-                2. They clearly name the medicine class and set expectations.
-                Alainn Clinic explains tirzepatide as a dual GIP and GLP-1
-                approach and positions it as medically supervised weight loss
-                support.
+                2. Honest explanation of eligibility, contraindications, side
+                effects, and why medical supervision matters.
               </p>
             </motion.div>
 
@@ -1105,16 +1119,16 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               className="bg-light p-8 rounded-xl shadow-lg"
             >
               <p className="text-taupe leading-relaxed">
-                3. They publish supporting education content, not just a sales
-                page. PULSE Clinic publishes broader GLP-1 education content and
-                positions multiple locations (KL, Damansara, Penang).
+                3. Practical clarity on dose escalation, maintenance, pricing,
+                and how a real clinic pathway works from first consultation
+                onward.
               </p>
             </motion.div>
           </div>
         </div>
       </motion.section>
 
-      {/* Differentiation Section - Semua kata lengkap */}
+      {/* Differentiation Section */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -1124,12 +1138,12 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
       >
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="font-georgia text-4xl text-brown text-center mb-8">
-            How Nexus Clinic Kuala Lumpur can stand out (clear differentiation
-            ideas)
+            How Nexus Clinic KL can stand out clearly
           </h2>
 
           <p className="text-center text-taupe max-w-3xl mx-auto mb-12">
-            To compete cleanly, your page should emphasise:
+            The page should keep emphasising the strengths already built into the
+            programme:
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -1139,7 +1153,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             >
               <Shield className="w-6 h-6 text-wine shrink-0 mt-1" />
               <span className="text-brown">
-                Safety-first screening and who it is NOT for
+                Safety-first screening and clear exclusion criteria
               </span>
             </motion.div>
 
@@ -1149,7 +1163,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             >
               <Activity className="w-6 h-6 text-wine shrink-0 mt-1" />
               <span className="text-brown">
-                Monitoring and side-effect management plan
+                Transparent titration and side-effect management support
               </span>
             </motion.div>
 
@@ -1159,7 +1173,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             >
               <FileText className="w-6 h-6 text-wine shrink-0 mt-1" />
               <span className="text-brown">
-                Clear "what happens in your first visit" flow
+                Clear first-visit process and programme explanation
               </span>
             </motion.div>
 
@@ -1169,8 +1183,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             >
               <Users className="w-6 h-6 text-wine shrink-0 mt-1" />
               <span className="text-brown">
-                A practical Malaysia lifestyle approach (food habits, work
-                schedules, social eating)
+                Realistic Malaysian lifestyle guidance instead of generic advice
               </span>
             </motion.div>
 
@@ -1180,7 +1193,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             >
               <Calendar className="w-6 h-6 text-wine shrink-0 mt-1" />
               <span className="text-brown">
-                Transparent expectations on timeline and maintenance
+                Long-term maintenance planning to reduce rebound weight regain
               </span>
             </motion.div>
           </div>
@@ -1189,13 +1202,13 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             variants={fadeInUp}
             className="text-center text-taupe mt-12 max-w-3xl mx-auto"
           >
-            These points match what people are searching for, and what
-            top-ranking pages are trying to communicate.
+            These are the details that make the page feel medically credible,
+            useful, and conversion-ready.
           </motion.p>
         </div>
       </motion.section>
 
-      {/* CTA Section - Semua kata lengkap */}
+      {/* CTA Section */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -1208,16 +1221,16 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             variants={fadeInUp}
             className="font-georgia text-4xl text-light mb-8"
           >
-            Ready to talk to a doctor at Nexus Clinic Kuala Lumpur?
+            Ready to speak with a doctor at Nexus Clinic KL?
           </motion.h2>
 
           <motion.p
             variants={fadeInUp}
             className="text-cream text-xl max-w-3xl mx-auto mb-12"
           >
-            If you are tired of yo-yo dieting and you want a medically guided
-            plan that feels realistic, book a consultation at Nexus Clinic Kuala
-            Lumpur.
+            Start with a complimentary consultation and get a clear answer on
+            suitability, dosage pathway, expected results, and the right
+            medically supervised plan for you.
           </motion.p>
 
           <motion.button
@@ -1226,7 +1239,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             whileTap={{ scale: 0.95 }}
             className="bg-light text-wine px-12 py-4 rounded-full font-semibold text-lg hover:bg-cream transition-colors shadow-xl"
           >
-            Book Consultation at Nexus Clinic Kuala Lumpur
+            Book Free Consultation
           </motion.button>
         </div>
       </motion.section>
